@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<updates>
+    <addons>
+        <addon id="clicktoplay-rollout@mozilla.org" URL="https://felipc.github.io/ctp100/clicktoplay-rollout@mozilla.org-fx55-100pct-v1.4-signed.xpi" hashFunction="sha512" hashValue="784c8812ebdf515639e326fb118f27436d74b24a22d69a1b8a0e8bbf3894be94faf606fbae4112d9eaec7f753827eed6a8432475174f7b637d90fc00f838b91f" size="6642" version="1.4"/>
+    </addons>
+</updates>

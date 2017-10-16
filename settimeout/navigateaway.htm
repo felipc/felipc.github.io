@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="countdown">30</div>
+<script>
+  function count() {
+    let val = parseInt(document.getElementById("countdown").innerHTML, 10);
+    if (val == 0) {
+      location.href = "about:blank";
+    } else {
+      document.getElementById("countdown").innerHTML = val--;
+      setTimeout(count, 1000);
+    }
+  }
+
+  setTimeout(count, 1000);
+</script>
+</body>
+</html>

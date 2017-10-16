@@ -8,7 +8,7 @@
     if (val == 0) {
       location.href = "about:blank";
     } else {
-      document.getElementById("countdown").innerHTML = val--;
+      document.getElementById("countdown").innerHTML = --val;
       setTimeout(count, 1000);
     }
   }

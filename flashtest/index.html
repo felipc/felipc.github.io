@@ -4,16 +4,23 @@
 <title>Flash sizing test</title>
 <meta charset="utf-8" />
 <script>
+function $(a) {
+  return document.getElementById(a);
+}
+
 document.addEventListener("input", function(event) {
-  var input = event.target;
-  var val = parseInt(input.value, 10); 
-  if (input.id == "w") {
-    document.getElementById("wt").innerHTML = "width: " + val + "px";
-    document.getElementById("obj").style.width = val + "px";
-  } else {
-    document.getElementById("ht").innerHTML = "height: " + val + "px";
-    document.getElementById("obj").style.height = val + "px";
-  }
+  $("obj").style.width = 0;
+  $("obj").style.height = 0;
+  var k = $("obj").scrollWidth;
+  var newW = parseInt($("w").value, 10);
+  var newH = parseInt($("h").value, 10);
+  setTimeout(function() {
+    $("obj").style.width = newW + "px";
+    $("obj").style.height = newH + "px";
+    $("wt").innerHTML = "width: " + newW + "px";
+    $("ht").innerHTML = "height: " + newH + "px";
+  }, 0);
+    var k2 = $("obj").scrollWidth;
 });
 </script>
 <style>

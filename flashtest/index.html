@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flash sizing test</title>
+<meta charset="utf-8" />
+<script>
+document.addEventListener("input", function(event) {
+  var input = event.target;
+  var val = parseInt(input.value, 10); 
+  if (input.id == "w") {
+    document.getElementById("wt").innerHTML = "width: " + val + "px";
+    document.getElementById("obj").style.width = val + "px";
+  } else {
+    document.getElementById("ht").innerHTML = "height: " + val + "px";
+    document.getElementById("obj").style.height = val + "px";
+  }
+});
+</script>
+<style>
+  input[type=range] {
+    width: 500px;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <input id="w" type="range" min="0" max="500" value="250"><span id="wt">width: 250px</span>
+  </div>
+  <div>
+    <input id="h" type="range" min="0" max="500" value="250"><span id="ht">height: 250px</span>
+  </div>
+  <div id="spacer" style="height: 50px; width:1px;"></div>
+  <object id="obj" width="250" height="250" data="plugin_simple_blank.swf"></object>
+</body>

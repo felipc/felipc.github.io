@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<updates>
+    <addons>
+        <addon id="styloblocklist@mozilla.org" URL="https://felipc.github.io/styloblocklist/styloblocklist@mozilla.org-fx58-v0.3-signed.xpi" hashFunction="sha512" hashValue="b9f74a27a470c04294c59888f1a24d861170ebe83a1048de6102166f425a6b9b82988211ae29d12d21e474f728a8376168968359dd3eb6cd96797df82b2ce6f6" size="6183" version="0.3"/>
+    </addons>
+</updates>

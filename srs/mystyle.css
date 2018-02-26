@@ -1,0 +1,35 @@
+img {
+  visibility: hidden !important;
+}
+
+.seethrough g {
+  fill: rgba(210,210,210,.75);
+}
+
+#jsPanel-1 {
+  z-index: 2147483641;
+}
+
+.flx {
+	display: flex;
+	container: justify-content;
+}
+
+.panel-srs-inner {
+	margin-bottom: 10px;
+}
+
+.flx > * {
+	flex-grow: 1;
+	width: 25%;
+}
+
+#panel-srs-invisible-text {
+	font-weight: bold;
+}
+
+#panel-srs-invisible-text.visible {
+	color: gray;
+	font-style: italic;
+	font-weight: normal;
+}

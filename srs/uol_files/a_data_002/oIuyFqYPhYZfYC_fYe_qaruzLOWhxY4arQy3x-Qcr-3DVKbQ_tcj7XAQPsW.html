@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ad.size" content="width=1190,height=400">
+    <meta name="ad.type" content="static">
+    <meta name="ad.creativeType" content="Showcase">
+    <meta name="ad.mediaType" content="Showcase Slot">
+    <meta name="ad.slots" content="5">
+    <title>Ofertas</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'UOLText';
+            src: url("//s.dynad.net/stack/FcQVaHc6MaOcDzQjhAV0qxcmwfGBhK8RIBMWDGFuEgyJsobabG_DAQ4EatxvCIKb7W1FITIWdNnmDFgnIuofZw.eot");
+            src: local("?"),
+            url("//s.dynad.net/stack/FcQVaHc6MaOcDzQjhAV0qxcmwfGBhK8RIBMWDGFuEgyJsobabG_DAQ4EatxvCIKb7W1FITIWdNnmDFgnIuofZw.eot#iefix") format("embedded-opentype"),
+            url("//s.dynad.net/stack/FcQVaHc6MaOcDzQjhAV0qxcmwfGBhK8RIBMWDGFuEgzIwMv0iuHXm_K0BXGfq-NPqFYh9ZAJ9XYV9St2B9vaVg.woff") format("woff"),
+            url("//s.dynad.net/stack/FcQVaHc6MaOcDzQjhAV0qxcmwfGBhK8RIBMWDGFuEgxvManNgoMDYARtyT8Lfrjti13HID6MhfrLg7RgDdMuTA.ttf") format("truetype"),
+            url("//s.dynad.net/stack/FcQVaHc6MaOcDzQjhAV0qxcmwfGBhK8RIBMWDGFuEgyH-0ZldVrDt2DWo9lZoes-BFTzQOzA57UkGHFadFkFng.svg#uol-text-regular") format("svg");
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            box-sizing: border-box;
+            max-width: 1190px;
+            width: 100%;
+            height: 400px;
+            border: 4px solid #f0f0f0;
+            overflow: hidden;
+            background: #fff;
+            font-family: 'UOLText';
+            text-align: center;
+        }
+
+        .ad-block {
+            width: 188px;
+            margin: 25px 17.5px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .ad-logo {
+            width: 188px;
+            height: 25px;
+            background: url('') center center no-repeat;
+            background-size: contain;
+        }
+
+        .ad-content {
+            margin-top: 20px;
+        }
+
+        .ad-image img {
+            width: 188px;
+            height: 113px;
+            display: block;
+        }
+
+        .text-wrapper {
+            height: 140px;
+            overflow: hidden;
+            word-wrap: break-word;
+
+        }
+
+        .ad-title {
+            font-size: 16px;
+            color: #c6000b;
+            line-height: 20px;
+            max-height: 40px;
+            overflow-y: hidden;
+            text-align: center;
+            margin: 18px 0 10px;
+        }
+
+        .ad-description {
+            font-size: 14px;
+            color: #333;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        .ad-call {
+            box-sizing: border-box;
+            width: 188px;
+            height: 40px;
+            background-color: #cc0000;
+            border-bottom: 2px solid #9d0202;
+            margin-top: 5px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'UOLText';
+        }
+
+        .ad-call:before {
+            content: "";
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            vertical-align: middle;
+            margin-right: 10px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .abrir-conta:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs6VVI6OSwGklGUM8m6tKIhOh5wADWD49DuMqKr3Y4JMI.png');
+        }
+
+        .alugar-carro:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFswE8w84ny7wr9_s5Xkcn7lOP7_7M7GqGteAqRVQdf2um.png');
+            width: 30px;
+            height: 30px;
+        }
+
+        .assinar:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs3Jbh2VWrYDaoudZKnFchq9K8Lipj9YqRlbeE65HG0Ch.png');
+        }
+
+        .assistir:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs5hIkvXOa7_Q6F5Ee0rKDIhGjJh4QNzQGr_fJA0L2t6P.png');
+        }
+
+        .checar:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs_8ym4RG2prbt4NXCnKeL1YGt-3QfjVttL5UzT7eAnkr.png');
+        }
+
+        .comprar:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs6LinPGylrqN9GW6U_aqd6tK8Lipj9YqRlbeE65HG0Ch.png') center center no-repeat;
+        }
+
+        .contratar:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs6tw8dM-p792ngc50kDX6MWUKW6q59zkQY3YGvmOlxe-.png');
+        }
+
+        .contratar-ja:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs6tw8dM-p792ngc50kDX6MUwyIvdoaQ0HMe-joyesEEs.png');
+        }
+
+        .cotar:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs_Bk9qBDtvaUM2xfnxqTLeLhkQ9QL55icBVKVJSDKGDQ.png');
+            width: 29px;
+            height: 29px;
+        }
+
+        .cotar-carro:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs6VEv3DUCVeDdw3T1SjlzQIOhl5dJFbTZFED2iaEFtyV.png');
+            width: 29px;
+            height: 29px;
+        }
+
+        .cotar-hoteis:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs5hzmkQPUv8Ys_fF1tC-XJt64zJQuCSvW5GABAx9pr0G.png');
+        }
+
+        .cotar-imovel:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs5lLsI0RBYKfEAcquc8Zww0VzIEnC2Iba-QTMN_vRn3d.png');
+        }
+
+        .cotar-seguro:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs0lTIVAZg7Af7S9Ys_eq_Ug8ToJx_ifOPi7MxE1hzaNe.png');
+        }
+
+        .doar:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs1k-vvkVvlVheJIQGvDCC1Plsfod4YDlzBc4P-ggEqWQ.png');
+        }
+
+        .fazer-doacao:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsxIBzn4r4Df-t5hziwNKV1akw_uXmu_JiEhuM--Cffpp.png');
+        }
+
+        .inscrever:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs8vPs_Wdb9TTnjqkLcK0SJ8S3RlnRP21RH9J63XiEC5z.png');
+        }
+
+        .investir-hoje:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs2KEz6cUXHlDDUgxWKVJL66o46OvuO99eeUHDKoZ5Aek.png');
+            width: 30px;
+            height: 30px;
+        }
+
+        .mais:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs2VVaBQQ_Zl-Nob6Ut41OOXlsfod4YDlzBc4P-ggEqWQ.png') center center no-repeat;
+        }
+
+        .matricular:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFszz74V6MhLII6aqxOGufStP9wXGXULRE-GVW0Mv_Ip9i.png');
+        }
+
+        .participar:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs0v0ZJh6NHUOvw_PDcDdYLixqTzjKK0uvGq1mNQqAsHC.png') center 0 no-repeat;
+        }
+
+        .pedir-oferta:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsyUoRsJ9rsCV6Pi89aH9RxUMKvb4JC1gyynBG5UGa5_j.png');
+        }
+
+        .reservar-voo:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs6hYMeIOyfB5uT2y-Hxz66RP2Qk5nBTHWv77w7AQaUVH.png');
+        }
+
+        .saber-mais:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs2VVaBQQ_Zl-Nob6Ut41OOXlsfod4YDlzBc4P-ggEqWQ.png') center no-repeat;
+        }
+
+        .ver:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsxRPQFzebZt2xIhdEUpXP8bDVKbQ_tcj7XAQPsWhT1lh.png');
+        }
+
+        .ver-colecao:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsy8eW-waQUTBsi49fa2BScT7JCXvZMs1w-1aQY52vPbU.png');
+        }
+
+        .ver-cotacao:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs6iEAW_MTPyRLvZCgkqQEh8kp6TGqr3s3qwaUYNrVRhe.png');
+            width: 30px;
+            height: 30px;
+        }
+
+        .ver-plano:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs3mqC-ae4lqpHPf1kgyUBQdsIDHTohmXaD1EVxbbb2Xg.png');
+            width: 29px;
+            height: 29px;
+        }
+
+        .ver-trailer:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsyMSnqbjriFAZopsuh-xnOxdvzA-X9ueVbnEChdIebC7.png');
+            width: 29px;
+            height: 29px;
+        }
+
+        .visitar:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs5F4ytHQOUbZnEgsR0Npg3RK8Lipj9YqRlbeE65HG0Ch.png');
+            width: 30px;
+            height: 30px;
+        }
+
+        .visitar-site:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs5F4ytHQOUbZnEgsR0Npg3QdnmjuLF-NtMU4n-ObBNI_.png');
+            width: 30px;
+            height: 30px;
+        }
+
+        .faca-parte:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs8vPs_Wdb9TTnjqkLcK0SJ8S3RlnRP21RH9J63XiEC5z.png');
+        }
+
+        .cadastre-se:before {
+            background: url('https://static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFs8vPs_Wdb9TTnjqkLcK0SJ8S3RlnRP21RH9J63XiEC5z.png');
+        }
+    </style>
+
+<!--DYNAD_AUTO_INSERTED--><script>
+!function(){function rep(p,z){if(void 0!==p)for(var x in p)z=z.replace(RegExp("{{"+x+"}}","gi"),p[x]);return z.replace(RegExp("{{.*?}}","g"),"")}function e(){this.r=null}function t(t){try{if(window.DYNADAPI_DATA=JSON.parse(t.data),void 0===window.DYNADAPI_DATA.clickTAG||void 0===window.DYNADAPI_DATA.target)return}catch(n){return;}null!=window.DYNADAPI.r&&clearTimeout(window.DYNADAPI.r),window.DYNADAPI.onload()}"object"!=typeof JSON&&(JSON={},JSON.parse=JSON.parse||function(o){return eval("("+o+")")},JSON.stringify=JSON.stringify||function(t){var n,e,i=typeof t,o=[];if("object"!=i||null===t)return"string"==i&&(t='"'+t+'"'),t+"";e=t&&t.constructor==Array;for(var r in t)n=t[r],i=typeof n,"string"==i?n='"'+n.replace(/["]/g,'\\"')+'"':"object"==i&&null!==n&&(n=JSON.stringify(n)),o.push((e?"":'"'+r+'":')+(n+""));return(e?"[":"{")+(o+"")+(e?"]":"}")}),"document"in self&&("classList"in document.createElement("_")?!function(){"use strict";var t=document.createElement("_");if(t.classList.add("c1","c2"),!t.classList.contains("c2")){var n=function(t){var n=DOMTokenList.prototype[t];DOMTokenList.prototype[t]=function(t){var e,i=arguments.length;for(e=0;i>e;e++)t=arguments[e],n.call(this,t)}};n("add"),n("remove")}if(t.classList.toggle("c3",!1),t.classList.contains("c3")){var e=DOMTokenList.prototype.toggle;DOMTokenList.prototype.toggle=function(t,n){return 1 in arguments&&!this.contains(t)==!n?n:e.call(this,t)}}t=null}():!function(t){"use strict";if("Element"in t){var n="classList",e="prototype",i=t.Element[e],o=Object,r=String[e].trim||function(){return this.replace(/^\s+|\s+$/g,"")},c=Array[e].indexOf||function(t){for(var n=0,e=this.length;e>n;n++)if(n in this&&this[n]===t)return n;return-1},A=function(t,n){this.name=t,this.code=DOMException[t],this.message=n},u=function(t,n){if(""===n)throw new A("SYNTAX_ERR","An invalid or illegal string was specified");if(/\s/.test(n))throw new A("INVALID_CHARACTER_ERR","String contains an invalid character");return c.call(t,n)},s=function(t){for(var n=r.call(t.getAttribute("class")||""),e=n?n.split(/\s+/):[],i=0,o=e.length;o>i;i++)this.push(e[i]);this._updateClassName=function(){t.setAttribute("class",""+this)}},a=s[e]=[],l=function(){return new s(this)};if(A[e]=Error[e],a.item=function(t){return this[t]||null},a.contains=function(t){return t+="",-1!==u(this,t)},a.add=function(){var t,n=arguments,e=0,i=n.length,o=!1;do t=n[e]+"",-1===u(this,t)&&(this.push(t),o=!0);while(++e<i);o&&this._updateClassName()},a.remove=function(){var t,n,e=arguments,i=0,o=e.length,r=!1;do for(t=e[i]+"",n=u(this,t);-1!==n;)this.splice(n,1),r=!0,n=u(this,t);while(++i<o);r&&this._updateClassName()},a.toggle=function(t,n){t+="";var e=this.contains(t),i=e?n!==!0&&"remove":n!==!1&&"add";return i&&this[i](t),n===!0||n===!1?n:!e},a.toString=function(){return this.join(" ")},o.defineProperty){var d={get:l,enumerable:!0,configurable:!0};try{o.defineProperty(i,n,d)}catch(D){-2146823252===D.number&&(d.enumerable=!1,o.defineProperty(i,n,d))}}else o[e].__defineGetter__&&i.__defineGetter__(n,l)}}(self)),!document.querySelectorAll&&document.createStyleSheet&&!function(){var t=document.createStyleSheet(),n=function(n,e){var i,o=document.all,r=o.length,c=[];for(t.addRule(n,"foo:bar"),i=0;r>i&&("bar"!==o[i].currentStyle.foo||(c.push(o[i]),c.length<=e));i+=1);return t.removeRule(0),c};document.querySelectorAll||document.querySelector||(document.querySelectorAll=function(t){return n(t,1/0)},document.querySelector=function(t){return n(t,1)[0]||null})}(),window.load=function(){window.onload()},window.load&&(window.onload=function(){window.DYNADAPI.init()}),e.prototype={contructor:e,setBackup:function(t){var n=!1,e=void 0!==window.DYNADAPI_DATA&&void 0!==window.DYNADAPI_DATA.clickTAG&&""!=window.DYNADAPI_DATA.clickTAG?window.DYNADAPI_DATA.clickTAG:"";try{(void 0===window.DYNADAPI_DATA||"{}"==JSON.stringify(window.DYNADAPI_DATA)||"undefined"===window.DYNADAPI_DATA.data||"[{}]"==JSON.stringify(window.DYNADAPI_DATA.data))&&(n=!0)}catch(i){n=!0}n&&(window.DYNADAPI_DATA="object"==typeof t?t:JSON.parse(t),window.DYNADAPI_DATA.clickTAG=e)},init:function(){this.r=setTimeout(function(){window.DYNADAPI.onload()},3e3)},getClickTAG:function(p){return rep(p,window.DYNADAPI_DATA.clickTAG)},getClickTAG2:function(p){return rep(p,void 0===window.DYNADAPI_DATA.clickTAG2?window.DYNADAPI_DATA.clickTAG:window.DYNADAPI_DATA.clickTAG2)},getClickTAG3:function(p){return rep(p,void 0===window.DYNADAPI_DATA.clickTAG3?window.DYNADAPI_DATA.clickTAG:window.DYNADAPI_DATA.clickTAG3)},getClickTAG4:function(p){return rep(p,void 0===window.DYNADAPI_DATA.clickTAG4?window.DYNADAPI_DATA.clickTAG:window.DYNADAPI_DATA.clickTAG4)},getClickTAG5:function(p){return rep(p,void 0===window.DYNADAPI_DATA.clickTAG5?window.DYNADAPI_DATA.clickTAG:window.DYNADAPI_DATA.clickTAG5)},getTarget:function(){return window.DYNADAPI_DATA.target},getDataLength:function(){return window.DYNADAPI_DATA.data.length},getDataItem:function(t,cb){if(window.DYNADAPI_DATA.data.length>t){if(typeof window.DYNADAPI_DATA.data[t].script!=='undefined'&&window.DYNADAPI_DATA.data[t].script!=''&&typeof cb!=='undefined')(new Function('callback,item', window.DYNADAPI_DATA.data[t].script))(function(i){if(i==null||typeof i==='undefined')window.DYNADAPI.getDataItem(t+1,cb);else cb(i,t)},window.DYNADAPI_DATA.data[t]);else if(typeof cb!=='undefined')cb(window.DYNADAPI_DATA.data[t],t);return window.DYNADAPI_DATA.data[t]}else if(typeof cb!=='undefined')cb(null,t);return null},getProperty:function(t){return window.DYNADAPI_DATA[t]}},window.addEventListener?window.addEventListener("message",t,!1):window.attachEvent&&window.attachEvent("onmessage",t),window.DYNADAPI=new e;var n=null}();
+</script><!--END DYNAD_AUTO_INSERTED-->
+</head>
+
+<body>
+    <div class="main">
+        <a class="ad-block" href="https://t.dynad.net/c/?dc=5550002704;ct=1;ci=5000017919;cr=4000032002.52412;cb=4000025183.0;ord=1519630632604;tid=TB-FE8;bid=;tt-socialclass=1;tt-cluster=58,59,72,24,52,34;tt-subjects=50,46,38,9;tt-gender=na;tt-age=3;tt-customaudience=CA9882,CA7847,CA17,CA9686,CA11755,CA11753,CA9558,CA11756,CA11757,CA11415,CA9881,CA10033,CA7240,CA7998,CA11345,CA7878,CA11411,CA11421,CA14207;tt-team=na;tt-microsegments=19,27,55;r=https%3A%2F%2Fwww.bonprix.com.br%2Fproduto%2Fmaio-preto-estampado-2875110%2F%3Flandmark%3DEntry%26wkz%3D98%26iwl%3D503%26typ%3DPOR%26anbieter%3DUniversoOnline%26aktion%3DBarraOfertas%26version%3DProspect%26promo%3D_1802_7676" target="_blank">
+            <div class="ad-logo" style="background-image: url(&quot;https://static.dynad.net/let/IGJ4LG_jrWkdmVfcZndi653Wkjx90G2u8azGtqDqZUKrD6mx8He6iA5VOyqKGSaZJvutlSatbxvYTB1oqUjp0O0dkrdrnggfKXCUIF-k87bTRXByJuMk0bTMs74sMDdGlgYjc7XcNFkeBvJTRRZMlA.png?hash=VzmANglrV3g3eRMlI91vPQ&quot;);"></div>
+            <div class="ad-content">
+                <div class="ad-image">
+                    <img src="oIuyFqYPhYZfYC_fYe_qaruzLOWhxY4arQy3x-Qcr-3DVKbQ_tcj7XAQPsWhT1lh/IGJ4LG_jrWkdmVfcZndi653Wkjx90G2u8azGtqDqZUKrD6mx8He6iA5V_002.png">
+                </div>
+                <div class="text-wrapper">
+                    <div class="ad-title">Maiô frente única</div>
+                    <div class="ad-description">Compre agora em até 5x sem Juros na bonprix com entrega em todo o Brasil!</div>
+                </div>
+            </div>
+            <div class="ad-call comprar">Comprar</div>
+        </a>
+
+        <a class="ad-block" href="https://t.dynad.net/c/?dc=5550002704;ct=1;ci=5000017899;cr=4000032002.50670;cb=4000025183.0;ord=1519630632604;tid=TB-FE8;bid=;tt-socialclass=1;tt-cluster=58,59,72,24,52,34;tt-subjects=50,46,38,9;tt-gender=na;tt-age=3;tt-customaudience=CA9882,CA7847,CA17,CA9686,CA11755,CA11753,CA9558,CA11756,CA11757,CA11415,CA9881,CA10033,CA7240,CA7998,CA11345,CA7878,CA11411,CA11421,CA14207;tt-team=na;tt-microsegments=19,27,55;r=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN177402.137746BRUOL.%2FB20607238.212264986%3Bdc_trk_aid%3D411548167%3Bdc_trk_cid%3D96692181%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D" target="_blank">
+            <div class="ad-logo" style="background-image: url(&quot;https://static.dynad.net/let/IGJ4LG_jrWkdmVfcZndi6_dPYT3JMs5nUKE1HBWAu1bayt8wNWVU4Vf-CmshaK1p2H_-Gr84RG8-3Y-H27yRRA6jfva2vOXRWRcF7AmwzyS7NtddhTle7IFWh5sICiBnBrft0H41bbS-VM0-3gJ5Kw.png?hash=VzmANglrV3g3eRMlI91vPQ&quot;);"></div>
+            <div class="ad-content">
+                <div class="ad-image">
+                    <img src="oIuyFqYPhYZfYC_fYe_qaruzLOWhxY4arQy3x-Qcr-3DVKbQ_tcj7XAQPsWhT1lh/IGJ4LG_jrWkdmVfcZndi6xXl2JZfkdJbg6jBxzlExDrsq2CZBTFefisLuK-b.png">
+                </div>
+                <div class="text-wrapper">
+                    <div class="ad-title">Peça já o seu ConectCar</div>
+                    <div class="ad-description">Cliente ConectCar tem até 5% de desconto nos Postos Ipiranga.</div>
+                </div>
+            </div>
+            <div class="ad-call comprar">Comprar</div>
+        </a>
+
+        <a class="ad-block" href="https://t.dynad.net/c/?dc=5550002704;ct=1;ci=5000018072;cr=4000032002.49065;cb=4000025183.0;ord=1519630632604;tid=TB-FE8;bid=;tt-socialclass=1;tt-cluster=58,59,72,24,52,34;tt-subjects=50,46,38,9;tt-gender=na;tt-age=3;tt-customaudience=CA9882,CA7847,CA17,CA9686,CA11755,CA11753,CA9558,CA11756,CA11757,CA11415,CA9881,CA10033,CA7240,CA7998,CA11345,CA7878,CA11411,CA11421,CA14207;tt-team=na;tt-microsegments=19,27,55;r=http%3A%2F%2Ftracker.adtools1.com%2Fck%2F%3Fc%3D9%26p%3D11081275%26ps%3Dcup7910w7pbr%26r%3Dhttp%253A%252F%252Fadfarm.mediaplex.com%252Fad%252Fck%252F12255-239986-31554-0%253Fmpre%253Dhttp%25253A%25252F%25252Fwww.dell.com%25252Fbr%25252Fempresa%25252Fp%25252Fprecision-t7910-workstation%25252Fpd%25253Foc%25253Dcup7910w7pbr%252526utm_campaign%25253Dshopping-uol%252526utm_source%25253Dshopping-uol%26s%3D133%26sc%3D070-080-696" target="_blank">
+            <div class="ad-logo" style="background-image: url(&quot;https://static.dynad.net/let/IGJ4LG_jrWkdmVfcZndi66hnFLzM1clYfpWnyihl6U8d5yId1bpt8iLDcBzzbZE1Gu6b-BllIsFhNrRaZkHPsqNuFN6kk6fI582bA40gsRYD7x1rbIsc1sigNjshMvITlgYjc7XcNFkeBvJTRRZMlA.png?hash=VzmANglrV3g3eRMlI91vPQ&quot;);"></div>
+            <div class="ad-content">
+                <div class="ad-image">
+                    <img src="oIuyFqYPhYZfYC_fYe_qaruzLOWhxY4arQy3x-Qcr-3DVKbQ_tcj7XAQPsWhT1lh/QSc1VOeXM_QPssiYqo4EcSILZSWoJsIHC3m1HvAeMWe1s4-O98mmCD8w67Kt.png">
+                </div>
+                <div class="text-wrapper">
+                    <div class="ad-title">Ofertas Dell</div>
+                    <div class="ad-description">Dell Precision Workstation T7910 Computador por 6x de R$3.073,00</div>
+                </div>
+            </div>
+            <div class="ad-call comprar">Comprar</div>
+        </a>
+
+        <a class="ad-block" href="https://t.dynad.net/c/?dc=5550002704;ct=1;ci=5000017105;cr=4000032002.50617;cb=4000025183.0;ord=1519630632604;tid=TB-FE8;bid=;tt-socialclass=1;tt-cluster=58,59,72,24,52,34;tt-subjects=50,46,38,9;tt-gender=na;tt-age=3;tt-customaudience=CA9882,CA7847,CA17,CA9686,CA11755,CA11753,CA9558,CA11756,CA11757,CA11415,CA9881,CA10033,CA7240,CA7998,CA11345,CA7878,CA11411,CA11421,CA14207;tt-team=na;tt-microsegments=19,27,55;r=https%3A%2F%2Fwww.smartfit.com.br%2Funidades%3Futm_source%3Duol%26utm_medium%3Ddisplay%26utm_campaign%3Duol_display_ros_188x113_barra-de-ofertas1_cpc_mensal_01-02-2018_28-02-2018%26utm_content%3D_PROMO_39" target="_blank">
+            <div class="ad-logo" style="background-image: url(&quot;https://static.dynad.net/let/IGJ4LG_jrWkdmVfcZndi66hnFLzM1clYfpWnyihl6U8d5yId1bpt8iLDcBzzbZE1cNUwSaHND93pj4jzm3jLZCviUGxYsKWomJkc4sXZKRQYJH6SjIWnTTv6RFI75l3EiNNoC5auxgZM1amu7Xpd9ZRi6uYtNxVp0bV_-oRThmc.png?hash=VzmANglrV3g3eRMlI91vPQ&quot;);"></div>
+            <div class="ad-content">
+                <div class="ad-image">
+                    <img src="oIuyFqYPhYZfYC_fYe_qaruzLOWhxY4arQy3x-Qcr-3DVKbQ_tcj7XAQPsWhT1lh/IGJ4LG_jrWkdmVfcZndi6_aKlj0mZLkbSLmUimuZ3Q0y0xEQ_jsG2rvWMPhf.png">
+                </div>
+                <div class="text-wrapper">
+                    <div class="ad-title">Smart Fit, planos a partir de R$ 39,90.</div>
+                    <div class="ad-description">Entenda os Planos, Escolha o seu e comece a treinar agora! Aproveite!</div>
+                </div>
+            </div>
+            <div class="ad-call matricular">Matricular-se</div>
+        </a>
+
+        <a class="ad-block" href="https://t.dynad.net/c/?dc=5550002704;ct=1;ci=5000018428;cr=4000032002.52402;cb=4000025183.0;ord=1519630632604;tid=TB-FE8;bid=;tt-socialclass=1;tt-cluster=58,59,72,24,52,34;tt-subjects=50,46,38,9;tt-gender=na;tt-age=3;tt-customaudience=CA9882,CA7847,CA17,CA9686,CA11755,CA11753,CA9558,CA11756,CA11757,CA11415,CA9881,CA10033,CA7240,CA7998,CA11345,CA7878,CA11411,CA11421,CA14207;tt-team=na;tt-microsegments=19,27,55;r=https%3A%2F%2Fwww.bonprix.com.br%2Fproduto%2Fvestido-bicolor-cru-preto-estampado-1951127%2F%3Flandmark%3DEntry%26wkz%3D98%26iwl%3D503%26typ%3DPOR%26anbieter%3DUniversoOnline%26aktion%3DBarraOfertas%26version%3DProspect%26promo%3D_1802_7668" target="_blank">
+            <div class="ad-logo" style="background-image: url(&quot;https://static.dynad.net/let/IGJ4LG_jrWkdmVfcZndi653Wkjx90G2u8azGtqDqZUKrD6mx8He6iA5VOyqKGSaZJvutlSatbxvYTB1oqUjp0O0dkrdrnggfKXCUIF-k87bTRXByJuMk0bTMs74sMDdGlgYjc7XcNFkeBvJTRRZMlA.png?hash=VzmANglrV3g3eRMlI91vPQ&quot;);"></div>
+            <div class="ad-content">
+                <div class="ad-image">
+                    <img src="oIuyFqYPhYZfYC_fYe_qaruzLOWhxY4arQy3x-Qcr-3DVKbQ_tcj7XAQPsWhT1lh/IGJ4LG_jrWkdmVfcZndi653Wkjx90G2u8azGtqDqZUKrD6mx8He6iA5VOyqK.png">
+                </div>
+                <div class="text-wrapper">
+                    <div class="ad-title">Vestido bicolor</div>
+                    <div class="ad-description">Compre agora em até 5x sem Juros na bonprix com entrega em todo o Brasil!</div>
+                </div>
+            </div>
+            <div class="ad-call comprar">Comprar</div>
+        </a>
+    </div>
+
+    <script>
+        DYNADAPI.onload = function () {
+            DYNADAPI.setBackup('{"target":"_blank","clickTAG":"//t.dynad.net/c/?dc=1000;ct=1;ci=5000003140;cr=4000021006.11;cb=4000021007.0;tracker=v2_2;bid=;","data":[{"id":132,"cid":5000003936,"title":"Oakley Two Barrel por R4 149,90","link":"//www.netshoes.com.br/mix/diacasual?campaign=displaycc&utm_source=me-r_uol_home_&utm_medium=vitrine&utm_campaign=me-r_uol_-_-tndria_home_bn16_-_--vitrine-_-_var_me__tenis-oakley-two-barrel-P03","imagePath":"//static.dynad.net/stack/l10ujLHZm1pwCagcc3wMebZ3VKPPEKVIAzrHbKIhk1FP0hBqg6ydnDNGOMrV_DDl.jpg","imagePath2":"","imagePath3":"","imagePath4":"","imagePath5":"","descriptive":"Oakley Two Barrel por R4 149,90","displayUrl":"Netshoes","ctaText":"Confira!","ctaIcon":"comprar","logo":"//static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsyHmp2-qUH_fgzZvSNQrzt9fPd3gRC3DH3xrRSlx_znm.jpg"},{"id":130,"cid":5000003936,"title":"Kit 2 Sapatenis por  R$ 79,90","link":"//www.netshoes.com.br/marca?Ntt=dexshoes&campaign=displaycc&utm_source=me-r_uol_home_&utm_medium=vitrine&utm_campaign=me-r_uol_home-_-tndria__tcdria_-_-vitrine-_-_bn16_var_me-r__kit-sapatenis-dexshoes-por-99_P03_mktplace","imagePath":"//static.dynad.net/stack/l10ujLHZm1pwCagcc3wMeR4_DBd0g15pV8iznZ0SuG9do8iin-Uql88kdL387Vik.jpg","imagePath2":"","imagePath3":"","imagePath4":"","imagePath5":"","descriptive":"Kit 2 Sapatenis por  R$ 79,90","displayUrl":"Netshoes","ctaText":"Saiba Mais","ctaIcon":"saber-mais","logo":"//static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsyHmp2-qUH_fgzZvSNQrzt9fPd3gRC3DH3xrRSlx_znm.jpg"},{"id":133,"cid":5000003936,"title":"CHUTEIRA","link":"//www.netshoes.com.br/marca?Ntt=CHUTEIRA+ADIDAS+ARTILHEIRA&campaign=displaycc&utm_source=me-r_uol_home_&utm_medium=vitrine&utm_campaign=me-r_uol_-_-tndria_home_bn16_-_--vitrine-_-_var_me__tenis-chuteira-adidas-por-99_P03","imagePath":"//static.dynad.net/stack/l10ujLHZm1pwCagcc3wMeVB0iHl8cois3Yux7WZUbbv-6c19wYZnTyfAKsarkumx.jpg","imagePath2":"","imagePath3":"","imagePath4":"","imagePath5":"","descriptive":"CHUTEIRA ADIDAS a partir de R$ 99,90","displayUrl":"Netshoes","ctaText":"Assisit","ctaIcon":"assistir","logo":"//static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsyHmp2-qUH_fgzZvSNQrzt9fPd3gRC3DH3xrRSlx_znm.jpg"},{"id":128,"cid":5000003935,"title":"Compre seu Apto pelo MCMV","link":"//www.mrv.com.br/?utm_source=Uol&utm_medium=Shopping&utm_campaign=Uol_Shopping&utm_content=Teste","imagePath":"//static.dynad.net/stack/MP8oCS0pDN6n7oONl872rLnHv5RLYWytyeNmPSCzRRtrUI8djz_AahBdQkbd1jyBw1Sm0P7XI-1wED7FoU9ZYQ.jpg","imagePath2":"","imagePath3":"","imagePath4":"","imagePath5":"","descriptive":"Simule seu financiamento na MRV no Chat 24h Subs??dio de at?? R$27.500*","displayUrl":"MRV","ctaText":"Participas","ctaIcon":"participar","logo":"//static.dynad.net/stack/MP8oCS0pDN6n7oONl872rIwrH4KyU6wTVeYoBL2AksgYxR0rnfNVJW3Z4kFlqHNi.png"},{"id":131,"cid":5000003936,"title":"Mochilas Femininas Malwee","link":"//click.publicidade.uol.com.br/click?ty=7&amp;ch=17&amp;s=POS_01&amp;ad=59333&amp;c=190&amp;sa=428738&amp;dt=27062016&amp;redir=//www.bonprix.com.br/categoria/ocasioes-ocasioes-especiais-tendencias-de-inverno/?landmark=Entry&amp;wkz=98&amp;iwl=123&amp;typ=POR&amp;anbieter=UniversoOnline&amp;aktion=UOL_BOL&amp;version=115x75&amp;promo=d/kleider_1606_593","descriptive":"Promo????o Mochila Malwee s?? se encontra aqui. Modelos incr??veis e o menor pre??oo do mercado!","imagePath":"//static.dynad.net/stack/l10ujLHZm1pwCagcc3wMeXmLPyUXTNL7o3I47WJ96Fh4jsmmvWerDbFUJDfryUl-.jpg","imagePath2":"","imagePath3":"","imagePath4":"","imagePath5":"","displayUrl":"Netshoes","ctaText":"Confira!","ctaIcon":"comprar","logo":"//static.dynad.net/stack/QhdhpMO-P3cmScZSkCjFsyHmp2-qUH_fgzZvSNQrzt9fPd3gRC3DH3xrRSlx_znm.jpg"},{"id":127,"cid":5000003935,"title":"Conquiste Seu Apto MRV","link":"//www.mrv.com.br/?utm_source=Uol&utm_medium=Shopping&utm_campaign=Uol_Shopping&utm_content=Teste","imagePath":"//static.dynad.net/stack/MP8oCS0pDN6n7oONl872rLnHv5RLYWytyeNmPSCzRRs3g1feKUtaTJKUZLJ5y-RPw1Sm0P7XI-1wED7FoU9ZYQ.jpg","imagePath2":"","imagePath3":"","imagePath4":"","imagePath5":"","descriptive":"2 quartos nas melhores localiza????es. Mensais a partir de R$299*","displayUrl":"MRV","ctaText":"Saiba Mais","ctaIcon":"saber-mais","logo":"//static.dynad.net/stack/MP8oCS0pDN6n7oONl872rIwrH4KyU6wTVeYoBL2AksgYxR0rnfNVJW3Z4kFlqHNi.png"}]}');
+            var target = DYNADAPI.getTarget();
+            var items = document.querySelectorAll('.ad-block');
+            var icons = ["comprar", "saber-mais", "participar"];
+            for (var i = 0; i < items.length; i++) {
+                var item = items[i];
+                var data = DYNADAPI.getDataItem(i);
+                var clickTAG = DYNADAPI.getClickTAG(data);
+                var iconClass = data.ctaIcon || icons[Math.floor(Math.random() * 3)];
+
+                var cta = "Comprar";
+                try {
+                    if (iconClass == "saber-mais") cta = "Saber Mais";
+                    if (iconClass == "assistir") cta = "Assistir";
+                    if (iconClass == "participar") cta = "Participar";
+                    if (iconClass == "visitar") cta = "Visitar Site";
+                    if (iconClass == "ver") cta = "Ver Oferta";
+                    if (iconClass == "checar") cta = "Checar Preço";
+                    if (iconClass == "cotar") cta = "Cotar Agora";
+                    if (iconClass == "assinar") cta = "Assinar Já";
+                    if (iconClass == "contratar") cta = "Contratar";
+                    if (iconClass == "doar") cta = "Fazer Doação";
+                    if (iconClass == "pedir-oferta") cta = "Pedir Oferta";
+                    if (iconClass == "contratar-ja") cta = "Contratar Já";
+                    if (iconClass == "reservar-voo") cta = "Reservar Voo";
+                    if (iconClass == "cotar-hoteis") cta = "Cotar Hotéis";
+                    if (iconClass == "alugar-carro") cta = "Alugar Carro";
+                    if (iconClass == "cotar-carro") cta = "Cotar Carro";
+                    if (iconClass == "ver-colecao") cta = "Ver Coleção";
+                    if (iconClass == "ver-trailer") cta = "Ver Trailer";
+                    if (iconClass == "ver-plano") cta = "Ver Plano";
+                    if (iconClass == "abrir-conta") cta = "Abrir Conta";
+                    if (iconClass == "investir-hoje") cta = "Investir Hoje";
+                    if (iconClass == "cotar-seguro") cta = "Cotar Seguro";
+                    if (iconClass == "ver-cotacao") cta = "Ver Cotação";
+                    if (iconClass == "inscrever") cta = "Inscrever-se";
+                    if (iconClass == "matricular") cta = "Matricular-se";
+                    if (iconClass == "cotar-imovel") cta = "Cotar Imóvel";
+                    if (iconClass == "fazer-doacao") cta = "Fazer Doação";
+                    if (iconClass == "visitar-site") cta = "Visitar Site";
+                    if (iconClass == "faca-parte") cta = "Faça Parte";
+                    if (iconClass == "cadastre-se") cta = "Cadastre-se";
+                } catch (e) {}
+
+                var logo = data.logo;
+                var image = data.imagePath;
+
+                try {
+                    if (image.indexOf('http:' + '//') == 0) {
+                        image = image.substring(5);
+                        if (console && console.warn)
+                            console.warn('[barra ofertas] - prevented http image [' + image + ']');
+                    }
+                } catch (e) {}
+
+                try {
+                    if (logo.indexOf('http:' + '//') == 0) {
+                        logo = logo.substring(5);
+                        if (console && console.warn)
+                            console.warn('[barra ofertas] - prevented http logo [' + logo + ']');
+                    }
+                } catch (e) {}
+
+                item.querySelector('.ad-logo').style.backgroundImage = "url(" + logo + "?hash=VzmANglrV3g3eRMlI91vPQ" + ")";
+                item.querySelector('.ad-image img').src = image + "?hash=PpIs81L6b7RKKpPzA4yk0g";
+                item.querySelector('.ad-title').innerHTML = data.title;
+                item.querySelector('.ad-description').innerHTML = data.descriptive;
+                item.querySelector('.ad-call').innerHTML = cta;
+                item.querySelector('.ad-call').className = item.querySelector('.ad-call').className + " " + iconClass;
+
+                item.href = clickTAG + "r=" + encodeURIComponent(data.link);
+                item.target = target;
+            }
+        };
+    </script>
+
+
+</body></html>

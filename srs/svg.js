@@ -90,6 +90,11 @@ function punchHoleAtElt(elt) {
   path.setAttribute("d", buildPath(rect));
 }
 
+function closeHole() {
+  var path = document.getElementById("path-punchhole");
+  path.setAttribute("d", buildPath({left:0, top:0, width:0, height: 0}));  
+}
+
 punchHoleAtElt(document.querySelectorAll("p")[1]);
 
 /*for (let e of document.querySelectorAll("p,li,a,h1,h2,h3,h4,h5,h6,code,pre,img,b,em")) {

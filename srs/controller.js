@@ -6,7 +6,7 @@ function CONTROLLERLOG(...args) {
   //console.log(...args);
 }
 
-var EXCLUSIONS = "iframe,html,body,script,head *,#jsPanel-1,#jsPanel-1 *,#srs-svg,#srs-svg *,style";
+var EXCLUSIONS = "iframe,html,body,script,noscript,head *,#jsPanel-1,#jsPanel-1 *,#srs-svg,#srs-svg *,style";
 var FORCESTOP = "img";
 
 function hasDirectText(elem) {
@@ -23,11 +23,14 @@ function hasDirectText(elem) {
 
 function isVisible(elt) {
   let rect = elt.getBoundingClientRect();
-  return rect.width > 0 &&
+  let hasVisibleRect =
+         rect.width > 0 &&
          rect.height > 0 &&
          // shouldn't check top due to scroll
          //rect.top >= 0 &&
          rect.left >= 0;
+  let isNotHidden = (elt.nodeName.toLowerCase() == "img") || window.getComputedStyle(elt,null).visibility != "hidden";
+  return hasVisibleRect && isNotHidden;
 }
 
 function goToNextElement(from, type, direction = "forward", goInside = true) {
@@ -121,9 +124,11 @@ function N(selector = "**", direction = "forward", goInside = true) {
 try {
   if (isVisible(selectedELEM)) {
     selectedELEM.scrollIntoView({behavior:"smooth", block:"center", inline:"nearest"});
+    punchHoleAtElt(selectedELEM);
+  } else {
+    closeHole();
   }
   adjustText();
-  punchHoleAtElt(selectedELEM);
   selectedELEM.focus();
 } catch (e) { console.log("error on N:", e)}
 }
@@ -177,7 +182,7 @@ function setInvisibleText(elem) {
   }
 
   document.getElementById("panel-srs-invisible-text").classList.toggle("visible", false);
-  document.getElementById("panel-srs-invisible-text").firstChild.nodeValue = "Alternate text available: " + text;
+  document.getElementById("panel-srs-invisible-text").firstChild.nodeValue = "Hidden element, alternate text: " + text;
 }
 
 selectedELEM=document.body;

@@ -19,13 +19,14 @@ let PANEL = `
     <span class="noticevisible">(regular text should be visible)</span>
     <span class="noticeinvisible">Hidden element, alternate text:</span>
     <span class="text"> </span>
+    <div class="link" style="margin-top: 10px">Link, title: <span class="linktitle"> </span></div>
   </div>
 </div>
 `;
 
 function firstItem() {
 	selectedELEM = document.body;
-	N();
+	N("*");
 }
 
 function firstHeader() {
@@ -42,11 +43,11 @@ function prevHeader() {
 }
 
 function prevItem() {
-	N("**", "backwards");
+	N("*", "backwards");
 }
 
 function nextItem() {
-	N();
+	N("*");
 }
 
 function anextSibling() {
@@ -67,7 +68,7 @@ jsPanel.create({
     theme:       'primary',
     headerTitle: 'Screen Reader Simulator',
     position:    'center-top 0 250',
-    contentSize: '480 150',
+    contentSize: '480 170',
     content:     PANEL,
     container: document.body,
     callback: function () {

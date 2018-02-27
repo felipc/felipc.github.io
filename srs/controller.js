@@ -148,6 +148,15 @@ function adjustText() {
     console.log("setInvisibleText");
     setInvisibleText(selectedELEM);
   }
+
+  if (selectedELEM.nodeName.toLowerCase() == "a" &&
+      selectedELEM.getAttribute("title")) {
+    let linktitle = selectedELEM.getAttribute("title") || "";
+    document.querySelector("#panel-srs-invisible-text .linktitle").firstChild.nodeValue = linktitle;
+    document.getElementById("panel-srs-invisible-text").classList.toggle("haslink", true); 
+  } else {
+    document.getElementById("panel-srs-invisible-text").classList.toggle("haslink", false); 
+  }
 }
 
 function clearInvisibleText() {

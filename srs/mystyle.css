@@ -1,8 +1,13 @@
-img {
+body:not(.seethrough) img {
   visibility: hidden !important;
 }
 
-.seethrough g {
+body:not(.seethrough) a {
+  background-image: none !important;
+}
+
+
+body.seethrough g {
   fill: rgba(210,210,210,.75);
 }
 
@@ -26,6 +31,14 @@ img {
 
 #panel-srs-invisible-text > .text {
 	font-weight: bold;
+}
+
+#panel-srs-invisible-text > .link {
+	font-weight: bold
+}
+
+#panel-srs-invisible-text:not(.haslink) > .link {
+	display: none;
 }
 
 #panel-srs-invisible-text > .noticevisible {

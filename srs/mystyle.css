@@ -24,11 +24,23 @@ img {
 	width: 25%;
 }
 
-#panel-srs-invisible-text {
+#panel-srs-invisible-text > .text {
 	font-weight: bold;
 }
 
-#panel-srs-invisible-text.visible {
+#panel-srs-invisible-text > .noticevisible {
+	display: none;
+}
+
+#panel-srs-invisible-text.visible > .noticevisible {
+	display: inline;
+}
+
+#panel-srs-invisible-text.visible > .noticeinvisible {
+	display: none;
+}
+
+#panel-srs-invisible-text.visible > .noticevisible {
 	color: gray;
 	font-style: italic;
 	font-weight: normal;

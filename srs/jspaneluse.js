@@ -1,21 +1,25 @@
 let PANEL = `
 <div class="panel-srs-inner flx">
-  <button onclick="firstItem()" tabindex="-1">First Item</button>
-  <button onclick="firstHeader()" tabindex="-1">First Header</button> &nbsp;&nbsp;|&nbsp;&nbsp;
-  <button onclick="prevHeader()" tabindex="-1">&lt;Prev Header</button>
-  <button onclick="nextHeader()" tabindex="-1">Next Header&gt;</button>
+  <button class="jspanelbutton" onclick="firstItem()" tabindex="-1">First Item</button>
+  <button class="jspanelbutton" onclick="firstHeader()" tabindex="-1">First Header</button> &nbsp;&nbsp;|&nbsp;&nbsp;
+  <button class="jspanelbutton" onclick="prevHeader()" tabindex="-1">&lt;Prev Header</button>
+  <button class="jspanelbutton" onclick="nextHeader()" tabindex="-1">Next Header&gt;</button>
 </div>
 <div class="panel-srs-inner flx">
-  <button onclick="prevItem()" tabindex="-1">&lt;Prev</button>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <button onclick="nextItem()" tabindex="-1">Next&gt;</button><!-- &nbsp;&nbsp;|&nbsp;&nbsp;
-  <button onclick="aprevSibling()" tabindex="-1">&lt;Prev Sibling</button>
-  <button onclick="anextSibling()" tabindex="-1">Next Sibling&gt;</button>-->
+  <button class="jspanelbutton" onclick="prevItem()" tabindex="-1">&lt;Prev</button>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <button class="jspanelbutton" onclick="nextItem()" tabindex="-1">Next&gt;</button><!-- &nbsp;&nbsp;|&nbsp;&nbsp;
+  <button class="jspanelbutton" onclick="aprevSibling()" tabindex="-1">&lt;Prev Sibling</button>
+  <button class="jspanelbutton" onclick="anextSibling()" tabindex="-1">Next Sibling&gt;</button>-->
 </div>
 <div class="panel-srs-inner">
   <input type="checkbox" id="seethrough" onchange="updatecheck()" tabindex="-1"> See through</input>
 </div>
 <div class="panel-srs-inner">
-  <div id="panel-srs-invisible-text" class="visible">(regular text should be visible)</div>
+  <div id="panel-srs-invisible-text" class="visible">
+    <span class="noticevisible">(regular text should be visible)</span>
+    <span class="noticeinvisible">Hidden element, alternate text:</span>
+    <span class="text"> </span>
+  </div>
 </div>
 `;
 

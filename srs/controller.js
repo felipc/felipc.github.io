@@ -151,7 +151,7 @@ function adjustText() {
 }
 
 function clearInvisibleText() {
-  document.getElementById("panel-srs-invisible-text").firstChild.nodeValue = "(regular text should be visible)";
+  document.querySelector("#panel-srs-invisible-text > .text").firstChild.nodeValue = " ";
   document.getElementById("panel-srs-invisible-text").classList.toggle("visible", true);
 }
 
@@ -182,7 +182,7 @@ function setInvisibleText(elem) {
   }
 
   document.getElementById("panel-srs-invisible-text").classList.toggle("visible", false);
-  document.getElementById("panel-srs-invisible-text").firstChild.nodeValue = "Hidden element, alternate text: " + text;
+  document.querySelector("#panel-srs-invisible-text > .text").firstChild.nodeValue = text;
 }
 
 selectedELEM=document.body;

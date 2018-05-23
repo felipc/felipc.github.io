@@ -3,7 +3,7 @@
 //find elements navigation
 
 function CONTROLLERLOG(...args) {
-  //console.log(...args);
+  console.log(...args);
 }
 
 var EXCLUSIONS = "iframe,html,body,script,noscript,head *,#jsPanel-1,#jsPanel-1 *,#srs-svg,#srs-svg *,style";
@@ -31,6 +31,15 @@ function isVisible(elt) {
          rect.left >= 0;
   let isNotHidden = (elt.nodeName.toLowerCase() == "img") || window.getComputedStyle(elt,null).visibility != "hidden";
   return hasVisibleRect && isNotHidden;
+}
+
+function findNestedCount(elem) {
+  let count = 0;
+  for (let k = elem; k.parentNode; count++) {
+    k = k.parentNode;
+  }
+  //console.log(`nest count of `, elem, ` is`, count);
+  return count;
 }
 
 function goToNextElement(from, type, direction = "forward", goInside = true) {
@@ -64,16 +73,17 @@ function goToNextElement(from, type, direction = "forward", goInside = true) {
 
     switch (direction) {
       case "forward":
-        match = goInside
-            ? (relativePos & document.DOCUMENT_POSITION_FOLLOWING)
-            : (relativePos & document.DOCUMENT_POSITION_FOLLOWING) && !(relativePos & document.DOCUMENT_POSITION_CONTAINED_BY);
+        match = (relativePos & document.DOCUMENT_POSITION_FOLLOWING);
+        if (match && !goInside) {
+          match = findNestedCount(elem) <= findNestedCount(from);
+        }
         break;
 
       case "backwards":
-        match = goInside
-            ? (relativePos & document.DOCUMENT_POSITION_PRECEDING)
-            : (relativePos & document.DOCUMENT_POSITION_PRECEDING) && !(relativePos & document.DOCUMENT_POSITION_CONTAINS);
-        break;
+        match = (relativePos & document.DOCUMENT_POSITION_PRECEDING);
+        if (match && !goInside) {
+          match = findNestedCount(elem) <= findNestedCount(from);
+        }
     }
 
     if (match) {
@@ -116,6 +126,12 @@ function N(selector = "**", direction = "forward", goInside = true) {
 
   let newElem = goToNextElement(selectedELEM, selector, direction, goInside);
   if (!newElem) {
+    if (goInside == false) {
+      newElem = goToNextElement(selectedELEM, selector, direction, true);
+    }
+  }
+
+  if (!newElem) {
     CONTROLLERLOG("not found");
     return;
   }
@@ -130,22 +146,22 @@ try {
   }
   adjustText();
   selectedELEM.focus();
-} catch (e) { console.log("error on N:", e)}
+} catch (e) { CONTROLLERLOG("error on N:", e)}
 }
 
 function adjustText() {
-  console.log("adjust text", selectedELEM);
+  CONTROLLERLOG("adjust text", selectedELEM);
   if (isVisible(selectedELEM)) {
-    console.log("isvisible");
+    CONTROLLERLOG("isvisible");
     if (selectedELEM.matches(FORCESTOP)) {
-      console.log("matches");
+      CONTROLLERLOG("matches");
       setInvisibleText(selectedELEM);
     } else {
-      console.log("doesnt match");
+      CONTROLLERLOG("doesnt match");
       clearInvisibleText();
     }
   } else {
-    console.log("setInvisibleText");
+    CONTROLLERLOG("setInvisibleText");
     setInvisibleText(selectedELEM);
   }
 

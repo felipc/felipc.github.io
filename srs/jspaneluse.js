@@ -6,10 +6,10 @@ let PANEL = `
   <button class="jspanelbutton" onclick="nextHeader()" tabindex="-1">Next Header&gt;</button>
 </div>
 <div class="panel-srs-inner flx">
-  <button class="jspanelbutton" onclick="prevItem()" tabindex="-1">&lt;Prev</button>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <button class="jspanelbutton" onclick="nextItem()" tabindex="-1">Next&gt;</button><!-- &nbsp;&nbsp;|&nbsp;&nbsp;
+  <button class="jspanelbutton" onclick="prevItem()" tabindex="-1">&lt;Prev</button>
+  <button class="jspanelbutton" onclick="nextItem()" tabindex="-1">Next&gt;</button> &nbsp;&nbsp;|&nbsp;&nbsp;
   <button class="jspanelbutton" onclick="aprevSibling()" tabindex="-1">&lt;Prev Sibling</button>
-  <button class="jspanelbutton" onclick="anextSibling()" tabindex="-1">Next Sibling&gt;</button>-->
+  <button class="jspanelbutton" onclick="anextSibling()" tabindex="-1">Next Sibling&gt;</button>
 </div>
 <div class="panel-srs-inner">
   <input type="checkbox" id="seethrough" onchange="updatecheck()" tabindex="-1"> See through</input>
@@ -51,11 +51,11 @@ function nextItem() {
 }
 
 function anextSibling() {
-	N(selectedELEM.nodeName.toLowerCase(), "forward");
+	N(selectedELEM.nodeName.toLowerCase(), "forward", false);
 }
 
 function aprevSibling() {
-	N(selectedELEM.nodeName.toLowerCase(), "backwards");
+	N(selectedELEM.nodeName.toLowerCase(), "backwards", false);
 }
 
 function updatecheck() {

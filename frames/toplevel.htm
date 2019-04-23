@@ -2,6 +2,12 @@
 <html>
 <head>
 	<title>Top level</title>
+<style>
+iframe {
+  width: 40vw;
+  height: 70vh;
+}
+</style>
 </head>
 <body>
 	<p>Top level</p>
@@ -10,7 +16,7 @@
 </body>
 <script>
 setTimeout(function() {
-	document.querySelector("p").textContent = " - test";
+	document.querySelector("p").textContent = "Fission test";
 	document.getElementById("invalid").src = "https://invalidpaththatdoesntexist.lol/aaa.htm";
 }, 5000);
 </script>

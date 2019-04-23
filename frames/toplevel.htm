@@ -6,6 +6,12 @@
 <body>
 	<p>Top level</p>
 	<iframe src="subframe.htm"></iframe>
-	<iframe src="https://aninvalidpathtofail.lol/aaa.htm"></iframe>
+	<iframe id="invalid"></iframe>
 </body>
+<script>
+setTimeout(function() {
+	document.querySelector("p").textContent = " - test";
+	document.getElementById("invalid").src = "https://invalidpaththatdoesntexist.lol/aaa.htm";
+}, 5000);
+</script>
 </html>
